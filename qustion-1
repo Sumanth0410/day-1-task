@@ -1,0 +1,35 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+answer:
+
+HTTP (Hypertext Transfer Protocol) is a protocol used for communication on the internet. It is the backbone of data transfer between web servers and web clients, such as browsers. Since its introduction in 1991, HTTP has undergone several changes and upgrades to improve its functionality and efficiency. Two of the most widely used versions of HTTP are HTTP1.1 and HTTP2.
+
+HTTP1.1
+
+HTTP1.1 was introduced in 1999 and has been the primary protocol used on the internet for more than two decades. It is a text-based protocol, which means that the client and server communicate using plain text messages. HTTP1.1 relies on a single connection for each request and response cycle, which makes it prone to performance issues when handling large amounts of data.
+
+Some of the key features of HTTP1.1 include:
+
+* Persistent Connections: HTTP1.1 allows persistent connections, which means that a single connection can be used for multiple requests and responses.
+
+* Compression: HTTP1.1 supports gzip compression, which helps reduce the size of data being transferred between the client and server.
+
+* Caching: HTTP1.1 supports caching, which means that frequently requested resources can be stored locally by the client to reduce the number of requests to the server.
+
+HTTP2
+
+HTTP2 was introduced in 2015 as an upgrade to HTTP1.1. It is a binary-based protocol, which means that the client and server communicate using binary messages instead of plain text. HTTP2 was designed to address some of the performance issues of HTTP1.1 and to make web pages load faster.
+
+Some of the key features of HTTP2 include:
+
+* Multiplexing: HTTP2 allows multiple requests and responses to be sent over a single connection at the same time, which makes it more efficient than HTTP1.1.
+
+* Server Push: HTTP2 allows the server to push resources to the client before the client requests them, which helps reduce the number of requests made by the client.
+
+* Binary Format: HTTP2 uses a binary format instead of plain text, which makes it more compact and efficient than HTTP1.1.
+
+* Header Compression: HTTP2 uses HPACK compression for headers, which helps reduce the size of data being transferred between the client and server.
+
+Conclusion
+
+In conclusion, HTTP2 is a significant improvement over HTTP1.1 in terms of performance and efficiency. It was designed to make web pages load faster, especially on mobile devices with limited bandwidth. While HTTP1.1 is still widely used, many websites are now adopting HTTP2 to improve their performance and user experience. As technology continues to evolve, we can expect further improvements in web protocols and standards.

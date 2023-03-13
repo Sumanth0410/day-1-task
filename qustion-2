@@ -1,0 +1,28 @@
+Write a blog about objects and its internal representation in Javascript
+
+answer:
+
+JavaScript is a popular programming language used for building web applications, games, and other interactive software. One of the fundamental concepts in JavaScript is the idea of an object, which is a data structure used for storing and organizing data.
+
+An object in JavaScript is a collection of properties, where each property has a name and a value. The name of the property is always a string, while the value can be any JavaScript data type, including numbers, strings, arrays, functions, and even other objects. Here's an example of an object in JavaScript:
+
+const person = {
+  name: 'John',
+  age: 30,
+  address: {
+    street: '123 Main St',
+    city: 'Anytown',
+    state: 'CA',
+    zip: '12345'
+  }
+};
+
+In this example, we have an object called person that has three properties: name, age, and address. The address property itself is another object that has four properties: street, city, state, and zip.
+
+Under the hood, JavaScript objects are implemented using a concept called prototypal inheritance. This means that each object has a prototype, which is essentially another object that it inherits properties and methods from. When you try to access a property on an object, JavaScript first looks for that property on the object itself. If it can't find it, it then looks for it on the object's prototype, and so on up the prototype chain until it either finds the property or reaches the end of the chain.
+
+JavaScript objects are stored in memory as a series of key-value pairs. When you create a new object, JavaScript allocates a block of memory to hold the object and its properties. Each property is stored as a key-value pair, where the key is a string and the value is a pointer to the actual data.
+
+One thing to keep in mind is that JavaScript objects are mutable, which means that you can add, remove, or modify properties on an object after it has been created. This can be a powerful feature, but it can also lead to bugs if you're not careful. For example, if you have two objects that share a reference to the same object, modifying that object will affect both of them.
+
+In conclusion, objects are a fundamental part of JavaScript and are used for storing and organizing data. Under the hood, JavaScript objects are implemented using prototypal inheritance and are stored in memory as a series of key-value pairs. Understanding how objects work in JavaScript is essential for building complex applications and avoiding common pitfalls.
